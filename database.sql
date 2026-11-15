@@ -57,6 +57,7 @@ CREATE TABLE `movimientos` (
   `cuenta_id` int NOT NULL,
   `tipo` enum('deposito','retiro','transferencia') NOT NULL,
   `monto` decimal(15,2) NOT NULL,
+  `saldo_resultante` decimal(15,2) DEFAULT NULL,
   `descripcion` varchar(255) DEFAULT NULL,
   `fecha` timestamp NULL DEFAULT CURRENT_TIMESTAMP,
   PRIMARY KEY (`id`),

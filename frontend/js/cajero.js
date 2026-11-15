@@ -71,7 +71,7 @@ btnIngresar.addEventListener("click", async () => {
     mensaje.textContent = "";
 
     try {
-        const respuesta = await fetch("http://localhost:3000/api/cajero/ingresar", {
+        const respuesta = await fetch("/api/cajero/ingresar", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"

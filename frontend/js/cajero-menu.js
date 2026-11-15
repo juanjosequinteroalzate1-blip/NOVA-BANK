@@ -14,7 +14,7 @@ btnSaldo.addEventListener("click", async () => {
 
     try {
         const respuesta = await fetch(
-            "http://localhost:3000/api/cajero/saldo",
+            "/api/cajero/saldo",
             { credentials: "include" }
         );
 
@@ -69,7 +69,7 @@ async function realizarRetiro() {
 
     try {
         const respuesta = await fetch(
-            "http://localhost:3000/api/cajero/retirar",
+            "/api/cajero/retirar",
             {
                 method: "POST",
                 headers: {
@@ -101,7 +101,7 @@ btnMovimientos.addEventListener("click", async () => {
 
     try {
         const respuesta = await fetch(
-            "http://localhost:3000/api/cajero/movimientos",
+            "/api/cajero/movimientos",
             { credentials: "include" }
         );
 
@@ -150,7 +150,7 @@ btnCerrar.addEventListener("click", async () => {
 
     try {
         const respuesta = await fetch(
-            "http://localhost:3000/api/cajero/cerrar",
+            "/api/cajero/cerrar",
             {
                 method: "POST",
                 credentials: "include"

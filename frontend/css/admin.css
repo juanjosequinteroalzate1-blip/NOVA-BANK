@@ -1,0 +1,162 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #101a35, #202d50, #382c59);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+
+.encabezado {
+    padding: 25px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgba(255,255,255,0.12);
+}
+
+.logo {
+    color: #d7b56d;
+    font-size: 25px;
+    font-weight: bold;
+    text-decoration: none;
+    letter-spacing: 2px;
+}
+
+.encabezado span {
+    color: #d7b56d;
+    font-size: 12px;
+    letter-spacing: 2px;
+}
+
+.contenedor-login {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 35px 20px;
+}
+
+.tarjeta-login {
+    background: white;
+    color: #172747;
+    width: 100%;
+    max-width: 430px;
+    padding: 40px;
+    border-radius: 16px;
+    box-shadow: 0 15px 45px rgba(0,0,0,0.25);
+}
+
+.icono-banco {
+    width: 55px;
+    height: 55px;
+    margin: 0 auto 20px;
+    border-radius: 14px;
+    background: #172747;
+    color: #d7b56d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.tarjeta-login h1 {
+    text-align: center;
+    font-size: 23px;
+    margin-bottom: 12px;
+}
+
+.tarjeta-login > p {
+    text-align: center;
+    color: #7b8495;
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 25px;
+}
+
+.campo {
+    margin-bottom: 20px;
+}
+
+.campo label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.campo input {
+    width: 100%;
+    padding: 14px;
+    border: 1px solid #dce1e9;
+    border-radius: 8px;
+    outline: none;
+    font-size: 14px;
+}
+
+.campo input:focus {
+    border-color: #b78b46;
+    box-shadow: 0 0 0 3px rgba(183,139,70,0.12);
+}
+
+#btnIngresar {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 8px;
+    background: #172747;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    letter-spacing: 1px;
+    transition: 0.2s;
+}
+
+#btnIngresar:hover {
+    background: #b78b46;
+}
+
+#mensaje {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 13px;
+    color: #c0392b;
+}
+
+.tarjeta-login > a {
+    display: block;
+    text-align: center;
+    margin-top: 22px;
+    color: #8b6b36;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    color: #c5cad5;
+    font-size: 12px;
+}
+
+@media (max-width: 500px) {
+    .encabezado {
+        padding: 20px;
+    }
+
+    .encabezado span {
+        font-size: 10px;
+    }
+
+    .tarjeta-login {
+        padding: 28px 22px;
+    }
+}

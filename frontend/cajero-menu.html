@@ -1,0 +1,65 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NOVA BANK | Menú del cajero</title>
+    <link rel="stylesheet" href="css/cajero-menu.css">
+</head>
+<body>
+
+    <header class="encabezado">
+        <div>
+            <h1>NOVA BANK</h1>
+            <p>CAJERO AUTOMÁTICO</p>
+        </div>
+        <span class="estado">● Sesión iniciada</span>
+    </header>
+
+    <main class="contenedor">
+        <section class="bienvenida">
+            <h2>¿Qué operación deseas realizar?</h2>
+            <p>Selecciona una de las opciones disponibles.</p>
+        </section>
+
+        <section class="opciones">
+
+            <button class="opcion" id="btnSaldo">
+                <span class="icono">▣</span>
+                <h3>Consultar saldo</h3>
+                <p>Consulta el dinero disponible en tu cuenta.</p>
+            </button>
+
+            <button class="opcion" id="btnRetirar">
+                <span class="icono">↓</span>
+                <h3>Retirar dinero</h3>
+                <p>Realiza un retiro de tu cuenta bancaria.</p>
+            </button>
+
+            <button class="opcion" id="btnMovimientos">
+                <span class="icono">≡</span>
+                <h3>Últimos movimientos</h3>
+                <p>Consulta tus últimas operaciones bancarias.</p>
+            </button>
+
+            <button class="opcion salir" id="btnCerrar">
+                <span class="icono">↪</span>
+                <h3>Finalizar operación</h3>
+                <p>Cierra tu sesión del cajero automático.</p>
+            </button>
+
+        </section>
+
+        <div id="resultado" class="resultado">
+            Selecciona una operación para continuar.
+        </div>
+
+        <footer>
+            <p>© 2026 NOVA BANK - Simulador Bancario Web</p>
+        </footer>
+    </main>
+
+    <script src="js/cajero-menu.js"></script>
+</body>
+</html>

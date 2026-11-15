@@ -1,0 +1,112 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NOVA BANK | Cajero Automático</title>
+    <link rel="stylesheet" href="css/cajero.css">
+</head>
+<body>
+
+    <header class="encabezado">
+        <a href="index.html" class="volver">← Volver al inicio</a>
+        <div class="marca">
+            <h1>NOVA BANK</h1>
+            <p>CAJERO AUTOMÁTICO</p>
+        </div>
+        <div class="estado">
+            <span class="indicador"></span>
+            Servicio disponible
+        </div>
+    </header>
+
+    <main class="cajero-contenedor">
+
+        <section class="maquina">
+
+            <div class="pantalla">
+
+                <div class="pantalla-superior">
+                    <h2>Bienvenido a NOVA BANK</h2>
+                    <p>Por favor, identifícate para comenzar</p>
+                </div>
+
+                <div class="formulario">
+
+                    <div class="campo">
+                        <label for="numeroCuenta">Número de cuenta</label>
+                        <input
+                            type="text"
+                            id="numeroCuenta"
+                            placeholder="Ingresa tu número de cuenta"
+                            maxlength="20"
+                            autocomplete="off"
+                        >
+                    </div>
+
+                    <div class="campo">
+                        <label for="pin">Clave de seguridad (PIN)</label>
+                        <input
+                            type="password"
+                            id="pin"
+                            placeholder="Ingresa tu PIN"
+                            maxlength="4"
+                            inputmode="numeric"
+                            autocomplete="off"
+                        >
+                    </div>
+
+                    <button type="button" id="btnIngresar" class="btn-ingresar">
+                        INGRESAR AL CAJERO
+                    </button>
+
+                    <p id="mensaje" class="mensaje" aria-live="polite"></p>
+
+                </div>
+
+                <div class="ayuda">
+                    <p>Tu seguridad es nuestra prioridad.</p>
+                    <p>Nunca compartas tu clave personal.</p>
+                </div>
+
+            </div>
+
+            <aside class="teclado">
+
+                <div class="teclado-titulo">
+                    <span>TECLADO NUMÉRICO</span>
+                </div>
+
+                <div class="teclas">
+                    <button type="button" class="tecla" data-numero="1">1</button>
+                    <button type="button" class="tecla" data-numero="2">2</button>
+                    <button type="button" class="tecla" data-numero="3">3</button>
+
+                    <button type="button" class="tecla" data-numero="4">4</button>
+                    <button type="button" class="tecla" data-numero="5">5</button>
+                    <button type="button" class="tecla" data-numero="6">6</button>
+
+                    <button type="button" class="tecla" data-numero="7">7</button>
+                    <button type="button" class="tecla" data-numero="8">8</button>
+                    <button type="button" class="tecla" data-numero="9">9</button>
+
+                    <button type="button" class="tecla borrar" data-accion="borrar">BORRAR</button>
+                    <button type="button" class="tecla" data-numero="0">0</button>
+                    <button type="button" class="tecla limpiar" data-accion="limpiar">LIMPIAR</button>
+                </div>
+
+            </aside>
+
+        </section>
+
+        <footer class="pie">
+            <p>© 2026 NOVA BANK | Simulador Bancario Web</p>
+            <p>Operaciones seguras y confiables</p>
+        </footer>
+
+    </main>
+
+    <script src="js/cajero.js"></script>
+</body>
+</html>

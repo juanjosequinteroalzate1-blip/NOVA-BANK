@@ -1,0 +1,467 @@
+
+/* ==========================================
+   NOVA BANK - ACCESO DE CLIENTES
+   Azul petroleo + Turquesa + Blanco
+========================================== */
+
+:root {
+    --petroleo: #123B46;
+    --petroleo-oscuro: #0B2C35;
+    --turquesa: #087E83;
+    --turquesa-claro: #42C6B5;
+    --fondo: #F4F8F8;
+    --blanco: #FFFFFF;
+    --texto: #18343B;
+    --secundario: #71858A;
+    --borde: #E2ECEC;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', Arial, sans-serif;
+    background: var(--fondo);
+    min-height: 100vh;
+    color: var(--texto);
+}
+
+/* ESTRUCTURA PRINCIPAL */
+
+.pagina-login {
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+/* PANEL IZQUIERDO */
+
+.panel-presentacion {
+    position: relative;
+    overflow: hidden;
+    min-height: 100vh;
+    padding: 38px 8%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: linear-gradient(
+        145deg,
+        #0B2C35,
+        #123B46 55%,
+        #087E83
+    );
+    color: white;
+}
+
+.logo {
+    position: relative;
+    z-index: 3;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: white;
+    text-decoration: none;
+    font-size: 21px;
+    font-weight: 800;
+    letter-spacing: -0.5px;
+}
+
+.logo-icono {
+    width: 42px;
+    height: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--turquesa-claro);
+    color: var(--petroleo);
+    border-radius: 12px;
+    font-size: 25px;
+    font-weight: 800;
+}
+
+.contenido-presentacion {
+    position: relative;
+    z-index: 2;
+    max-width: 500px;
+    margin: 55px 0;
+}
+
+.etiqueta-login {
+    display: inline-block;
+    padding: 9px 14px;
+    border: 1px solid rgba(255,255,255,0.3);
+    border-radius: 30px;
+    color: #B8F1E9;
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    background: rgba(255,255,255,0.08);
+}
+
+.contenido-presentacion h1 {
+    margin-top: 25px;
+    font-size: clamp(38px, 4vw, 57px);
+    line-height: 1.12;
+    letter-spacing: -2px;
+}
+
+.contenido-presentacion > p {
+    max-width: 440px;
+    margin-top: 20px;
+    color: #D5E8E9;
+    font-size: 14px;
+    line-height: 1.9;
+}
+
+/* SEGURIDAD */
+
+.mensaje-seguridad {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+    margin-top: 35px;
+}
+
+.icono-seguridad {
+    width: 39px;
+    height: 39px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    background: rgba(66,198,181,0.2);
+    color: var(--turquesa-claro);
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.mensaje-seguridad div {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.mensaje-seguridad strong {
+    font-size: 12px;
+}
+
+.mensaje-seguridad div span {
+    color: #BDD4D5;
+    font-size: 11px;
+}
+
+/* TARJETA DECORATIVA */
+
+.decoracion-login {
+    position: absolute;
+    right: -60px;
+    bottom: 100px;
+    width: 330px;
+    height: 270px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.95;
+}
+
+.circulo-login {
+    position: absolute;
+    border: 1px solid rgba(255,255,255,0.16);
+    border-radius: 50%;
+}
+
+.circulo-grande {
+    width: 280px;
+    height: 280px;
+}
+
+.circulo-pequeno {
+    width: 205px;
+    height: 205px;
+}
+
+.tarjeta-login-visual {
+    position: relative;
+    z-index: 2;
+    width: 240px;
+    height: 150px;
+    padding: 19px;
+    border-radius: 17px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: var(--petroleo);
+    background: linear-gradient(135deg, #FFFFFF, #D9F3EF);
+    box-shadow: 0 20px 45px rgba(0,0,0,0.2);
+    transform: rotate(-9deg);
+}
+
+.tarjeta-login-visual span {
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+.tarjeta-login-visual strong {
+    font-size: 28px;
+    letter-spacing: 3px;
+}
+
+.tarjeta-login-visual small {
+    font-size: 7px;
+    color: #668889;
+    letter-spacing: 1px;
+}
+
+.texto-pie-panel {
+    position: relative;
+    z-index: 2;
+    color: #BDD4D5;
+    font-size: 11px;
+}
+
+/* PANEL DERECHO */
+
+.panel-formulario {
+    min-height: 100vh;
+    padding: 40px 8%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: var(--blanco);
+}
+
+.formulario-contenido {
+    width: 100%;
+    max-width: 420px;
+}
+
+.encabezado-formulario {
+    margin-bottom: 38px;
+}
+
+.subtitulo-formulario {
+    color: var(--turquesa);
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+.encabezado-formulario h2 {
+    margin-top: 14px;
+    color: var(--petroleo);
+    font-size: 32px;
+    letter-spacing: -1.2px;
+}
+
+.encabezado-formulario p {
+    margin-top: 12px;
+    color: var(--secundario);
+    font-size: 13px;
+    line-height: 1.7;
+}
+
+/* CAMPOS */
+
+.campo {
+    margin-bottom: 23px;
+}
+
+.campo label {
+    display: block;
+    margin-bottom: 9px;
+    color: var(--petroleo);
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.campo input {
+    width: 100%;
+    padding: 16px;
+    border: 1px solid var(--borde);
+    border-radius: 10px;
+    outline: none;
+    background: #FAFCFC;
+    color: var(--texto);
+    font-family: inherit;
+    font-size: 13px;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.campo input::placeholder {
+    color: #A3B1B3;
+}
+
+.campo input:focus {
+    border-color: var(--turquesa);
+    box-shadow: 0 0 0 4px rgba(8,126,131,0.10);
+    background: white;
+}
+
+/* BOTON */
+
+#btnIngresar {
+    width: 100%;
+    padding: 16px 19px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: none;
+    border-radius: 10px;
+    background: var(--turquesa);
+    color: white;
+    font-family: inherit;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 0.7px;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.2s;
+}
+
+#btnIngresar span {
+    font-size: 20px;
+}
+
+#btnIngresar:hover {
+    background: var(--petroleo);
+    transform: translateY(-2px);
+}
+
+#btnIngresar:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+    transform: none;
+}
+
+/* MENSAJES */
+
+.mensaje {
+    min-height: 18px;
+    margin-top: 15px;
+    font-size: 12px;
+    text-align: center;
+    color: #C0392B;
+}
+
+.separador {
+    height: 1px;
+    width: 100%;
+    margin: 30px 0;
+    background: var(--borde);
+}
+
+.ayuda-login {
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+    text-align: center;
+}
+
+.ayuda-login span {
+    color: var(--secundario);
+    font-size: 12px;
+}
+
+.ayuda-login a {
+    color: var(--turquesa);
+    font-size: 12px;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.ayuda-login a:hover {
+    text-decoration: underline;
+}
+
+/* PIE DE PAGINA */
+
+.pie-login {
+    margin-top: 45px;
+    color: var(--secundario);
+    font-size: 10px;
+    text-align: center;
+}
+
+/* TABLET */
+
+@media (max-width: 850px) {
+    .pagina-login {
+        grid-template-columns: 0.9fr 1.1fr;
+    }
+
+    .panel-presentacion {
+        padding: 30px 7%;
+    }
+
+    .contenido-presentacion h1 {
+        font-size: 39px;
+    }
+
+    .decoracion-login {
+        right: -110px;
+        opacity: 0.5;
+    }
+}
+
+/* CELULARES */
+
+@media (max-width: 650px) {
+    .pagina-login {
+        grid-template-columns: 1fr;
+    }
+
+    .panel-presentacion {
+        min-height: 310px;
+        padding: 25px 7%;
+    }
+
+    .contenido-presentacion {
+        margin: 40px 0 25px;
+    }
+
+    .contenido-presentacion h1 {
+        font-size: 37px;
+    }
+
+    .contenido-presentacion > p {
+        font-size: 12px;
+    }
+
+    .mensaje-seguridad {
+        margin-top: 20px;
+    }
+
+    .decoracion-login {
+        display: none;
+    }
+
+    .texto-pie-panel {
+        display: none;
+    }
+
+    .panel-formulario {
+        min-height: 550px;
+        padding: 45px 7%;
+    }
+
+    .encabezado-formulario h2 {
+        font-size: 27px;
+    }
+
+    .pie-login {
+        margin-top: 35px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        transition-duration: 0.01ms !important;
+    }
+}

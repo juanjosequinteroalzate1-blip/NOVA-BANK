@@ -1,0 +1,259 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #e9edf4;
+    color: #18243a;
+    min-height: 100vh;
+}
+
+.encabezado {
+    background: #111d35;
+    color: white;
+    min-height: 95px;
+    padding: 18px 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.volver {
+    color: #d8b36b;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.marca {
+    text-align: center;
+}
+
+.marca h1 {
+    color: #d8b36b;
+    letter-spacing: 4px;
+    font-size: 27px;
+}
+
+.marca p {
+    font-size: 11px;
+    letter-spacing: 3px;
+    margin-top: 5px;
+}
+
+.estado {
+    font-size: 13px;
+    color: #dce5f2;
+}
+
+.indicador {
+    display: inline-block;
+    width: 9px;
+    height: 9px;
+    background: #39c77a;
+    border-radius: 50%;
+    margin-right: 6px;
+}
+
+.cajero-contenedor {
+    width: 94%;
+    max-width: 1050px;
+    margin: 45px auto;
+}
+
+.maquina {
+    background: #26334a;
+    padding: 25px;
+    border-radius: 18px;
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 25px;
+    box-shadow: 0 15px 35px rgba(17, 29, 53, 0.22);
+    border: 5px solid #35435b;
+}
+
+.pantalla {
+    background: #f8fafc;
+    border: 8px solid #111d35;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    min-height: 440px;
+}
+
+.pantalla-superior {
+    background: #14213d;
+    color: white;
+    text-align: center;
+    padding: 28px 15px;
+}
+
+.pantalla-superior h2 {
+    font-size: 23px;
+    margin-bottom: 9px;
+}
+
+.pantalla-superior p {
+    color: #cbd5e1;
+    font-size: 14px;
+}
+
+.formulario {
+    padding: 28px 35px;
+    flex: 1;
+}
+
+.campo {
+    margin-bottom: 20px;
+}
+
+.campo label {
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 9px;
+}
+
+.campo input {
+    width: 100%;
+    padding: 13px;
+    border: 1px solid #cbd5e1;
+    border-radius: 7px;
+    font-size: 14px;
+    outline: none;
+}
+
+.campo input:focus {
+    border-color: #b78b46;
+    box-shadow: 0 0 0 3px rgba(183, 139, 70, 0.15);
+}
+
+.btn-ingresar {
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 7px;
+    background: #172747;
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.btn-ingresar:hover {
+    background: #b78b46;
+}
+
+.mensaje {
+    margin-top: 15px;
+    text-align: center;
+    font-size: 13px;
+    color: #b42318;
+}
+
+.ayuda {
+    background: #edf1f7;
+    text-align: center;
+    padding: 14px;
+    color: #64748b;
+    font-size: 12px;
+    line-height: 1.6;
+}
+
+.teclado {
+    background: #1a263c;
+    border: 1px solid #46536a;
+    border-radius: 10px;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.teclado-titulo {
+    text-align: center;
+    color: #d8b36b;
+    font-size: 13px;
+    letter-spacing: 2px;
+    margin-bottom: 22px;
+}
+
+.teclas {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+}
+
+.tecla {
+    min-height: 60px;
+    background: #edf1f7;
+    color: #18243a;
+    border: none;
+    border-radius: 7px;
+    font-size: 19px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 4px 0 #aab4c3;
+}
+
+.tecla:hover {
+    background: #d8b36b;
+}
+
+.tecla:active {
+    transform: translateY(3px);
+    box-shadow: none;
+}
+
+.borrar {
+    background: #c65b54;
+    color: white;
+    font-size: 11px;
+}
+
+.limpiar {
+    background: #d8b36b;
+    font-size: 11px;
+}
+
+.pie {
+    text-align: center;
+    color: #64748b;
+    font-size: 13px;
+    line-height: 1.8;
+    padding: 20px;
+}
+
+@media (max-width: 750px) {
+    .encabezado {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .maquina {
+        grid-template-columns: 1fr;
+        padding: 15px;
+    }
+
+    .formulario {
+        padding: 25px 20px;
+    }
+
+    .pantalla {
+        min-height: 400px;
+    }
+
+    .teclado {
+        padding: 20px;
+    }
+
+    .tecla {
+        min-height: 52px;
+    }
+}

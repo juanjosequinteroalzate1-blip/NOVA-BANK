@@ -1,0 +1,152 @@
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="theme-color" content="#123B46">
+
+    <title>NOVA BANK | Acceso a clientes</title>
+
+    <link rel="stylesheet" href="css/cliente.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <main class="pagina-login">
+
+        <!-- PANEL DE PRESENTACIÓN -->
+
+        <section class="panel-presentacion">
+
+            <a href="index.html" class="logo">
+                <span class="logo-icono">N</span>
+                <span>NOVA BANK</span>
+            </a>
+
+            <div class="contenido-presentacion">
+
+                <span class="etiqueta-login">
+                    BANCA DIGITAL
+                </span>
+
+                <h1>
+                    Tu banco,<br>
+                    tu tranquilidad.
+                </h1>
+
+                <p>
+                    Administra tu dinero de una manera más sencilla.
+                    Consulta tus cuentas, realiza transferencias y
+                    mantén el control de tus finanzas.
+                </p>
+
+                <div class="mensaje-seguridad">
+                    <span class="icono-seguridad">✓</span>
+
+                    <div>
+                        <strong>Tu seguridad es importante</strong>
+                        <span>Acceso personal y protegido.</span>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="decoracion-login">
+                <div class="circulo-login circulo-grande"></div>
+                <div class="circulo-login circulo-pequeno"></div>
+
+                <div class="tarjeta-login-visual">
+                    <span>NOVA BANK</span>
+                    <strong>NOVA.</strong>
+                    <small>UNA NUEVA EXPERIENCIA BANCARIA</small>
+                </div>
+            </div>
+
+            <p class="texto-pie-panel">
+                Tu banco digital, siempre contigo.
+            </p>
+
+        </section>
+
+        <!-- FORMULARIO DE ACCESO -->
+
+        <section class="panel-formulario">
+
+            <div class="formulario-contenido">
+
+                <div class="encabezado-formulario">
+                    <span class="subtitulo-formulario">
+                        BIENVENIDO DE NUEVO
+                    </span>
+
+                    <h2>Ingresa a tu cuenta</h2>
+
+                    <p>
+                        Introduce tus datos para acceder a tu banca virtual.
+                    </p>
+                </div>
+
+                <form id="formLogin">
+
+                    <div class="campo">
+                        <label for="email">Correo electrónico</label>
+
+                        <input
+                            type="email"
+                            id="email"
+                            placeholder="ejemplo@correo.com"
+                            autocomplete="username"
+                            required
+                        >
+                    </div>
+
+                    <div class="campo">
+                        <label for="password">Contraseña</label>
+
+                        <input
+                            type="password"
+                            id="password"
+                            placeholder="Ingresa tu contraseña"
+                            autocomplete="current-password"
+                            required
+                        >
+                    </div>
+
+                    <button type="button" id="btnIngresar">
+                        INGRESAR A MI CUENTA
+                        <span>→</span>
+                    </button>
+
+                    <p id="mensaje" class="mensaje"></p>
+
+                </form>
+
+                <div class="separador"></div>
+
+                <div class="ayuda-login">
+                    <span>¿No deseas ingresar todavía?</span>
+                    <a href="index.html">Volver a la página principal</a>
+                </div>
+
+            </div>
+
+            <footer class="pie-login">
+                © 2026 NOVA BANK - Simulador Bancario Web
+            </footer>
+
+        </section>
+
+    </main>
+
+    <script src="js/cliente.js"></script>
+
+</body>
+</html>

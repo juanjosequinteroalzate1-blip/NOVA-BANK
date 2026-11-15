@@ -1,0 +1,225 @@
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#123B46">
+
+    <title>NOVA BANK | Administración</title>
+
+    <link rel="stylesheet" href="css/admin-menu.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="panel-admin">
+
+        <!-- MENÚ LATERAL -->
+
+        <aside class="barra-lateral-admin">
+
+            <a href="index.html" class="logo-admin">
+                <span class="logo-icono-admin">N</span>
+                <span>NOVA BANK</span>
+            </a>
+
+            <div class="perfil-admin">
+                <div class="avatar-admin">A</div>
+
+                <div class="datos-admin">
+                    <strong>Administrador</strong>
+                    <span>Panel de control</span>
+                </div>
+            </div>
+
+            <nav class="navegacion-admin">
+
+                <span class="titulo-menu-admin">MENÚ PRINCIPAL</span>
+
+                <button id="btnInicioAdmin" class="opcion-admin activa" type="button">
+                    <span class="icono-admin">⌂</span>
+                    <span>Inicio</span>
+                </button>
+
+                <button id="btnClientes" class="opcion-admin" type="button">
+                    <span class="icono-admin">♙</span>
+                    <span>Gestionar clientes</span>
+                </button>
+
+                <button id="btnCuentas" class="opcion-admin" type="button">
+                    <span class="icono-admin">▣</span>
+                    <span>Cuentas bancarias</span>
+                </button>
+
+                <button id="btnDepositos" class="opcion-admin" type="button">
+                    <span class="icono-admin">＋</span>
+                    <span>Registrar depósitos</span>
+                </button>
+
+                <button id="btnMovimientos" class="opcion-admin" type="button">
+                    <span class="icono-admin">↗</span>
+                    <span>Movimientos generales</span>
+                </button>
+
+            </nav>
+
+            <div class="inferior-admin">
+
+                <div class="mensaje-admin">
+                    <span>✓</span>
+                    <p>Control y seguridad para NOVA BANK.</p>
+                </div>
+
+                <button id="btnCerrarSesion" class="btn-cerrar-admin" type="button">
+                    <span>↪</span>
+                    Cerrar sesión
+                </button>
+
+            </div>
+
+        </aside>
+
+        <!-- CONTENIDO PRINCIPAL -->
+
+        <main class="contenido-admin">
+
+            <header class="barra-superior-admin">
+
+                <div class="titulo-admin">
+                    <span class="indicador-admin">GESTIÓN BANCARIA</span>
+                    <h1>Panel administrativo</h1>
+                </div>
+
+                <div class="usuario-admin-superior">
+                    <div class="inicial-admin-superior">A</div>
+
+                    <div class="datos-usuario-admin">
+                        <strong>Administrador NOVA</strong>
+                        <span>Cuenta administrativa</span>
+                    </div>
+                </div>
+
+            </header>
+
+            <!-- BIENVENIDA -->
+
+            <section class="bienvenida-admin">
+
+                <div>
+                    <span class="etiqueta-admin">CENTRO DE CONTROL</span>
+
+                    <h2 id="nombreAdmin">
+                        Bienvenido al sistema administrativo de NOVA BANK.
+                    </h2>
+
+                    <p>
+                        Administra clientes, cuentas y operaciones
+                        desde un solo lugar.
+                    </p>
+                </div>
+
+                <div class="simbolo-admin">N</div>
+
+            </section>
+
+            <!-- ESTADÍSTICAS -->
+
+            <section class="estadisticas-admin" id="estadisticas">
+
+                <div class="estadistica-admin">
+                    <div class="icono-estadistica">♙</div>
+                    <span>Total de clientes</span>
+                    <p id="totalClientes">--</p>
+                </div>
+
+                <div class="estadistica-admin">
+                    <div class="icono-estadistica">✓</div>
+                    <span>Clientes activos</span>
+                    <p id="clientesActivos">--</p>
+                </div>
+
+                <div class="estadistica-admin">
+                    <div class="icono-estadistica">!</div>
+                    <span>Clientes bloqueados</span>
+                    <p id="clientesBloqueados">--</p>
+                </div>
+
+                <div class="estadistica-admin">
+                    <div class="icono-estadistica">$</div>
+                    <span>Saldo total del banco</span>
+                    <p id="saldoTotal">--</p>
+                </div>
+
+            </section>
+
+            <!-- CONTENIDO DINÁMICO -->
+
+            <section id="resultado" class="resultado-admin">
+
+                <div class="encabezado-resultado-admin">
+                    <span class="subtitulo-admin">RESUMEN GENERAL</span>
+                    <h2>¿Qué deseas administrar hoy?</h2>
+                    <p>
+                        Selecciona una opción del menú para gestionar
+                        la información bancaria.
+                    </p>
+                </div>
+
+                <div class="tarjetas-admin">
+
+                    <div class="tarjeta-admin">
+                        <div class="icono-tarjeta-admin">♙</div>
+                        <h3>Clientes</h3>
+                        <p>Registra, consulta y administra los clientes del banco.</p>
+                    </div>
+
+                    <div class="tarjeta-admin">
+                        <div class="icono-tarjeta-admin">▣</div>
+                        <h3>Cuentas</h3>
+                        <p>Consulta las cuentas bancarias y sus saldos.</p>
+                    </div>
+
+                    <div class="tarjeta-admin">
+                        <div class="icono-tarjeta-admin">＋</div>
+                        <h3>Depósitos</h3>
+                        <p>Registra ingresos de dinero en las cuentas.</p>
+                    </div>
+
+                    <div class="tarjeta-admin">
+                        <div class="icono-tarjeta-admin">↗</div>
+                        <h3>Movimientos</h3>
+                        <p>Consulta las operaciones realizadas en NOVA BANK.</p>
+                    </div>
+
+                </div>
+
+                <div class="aviso-admin">
+                    <strong>Panel de administración NOVA BANK</strong>
+                    <p>
+                        Recuerda verificar los datos antes de realizar
+                        cambios en las cuentas de los clientes.
+                    </p>
+                </div>
+
+            </section>
+
+            <footer class="pie-admin">
+                <span>© 2026 NOVA BANK</span>
+                <span>Sistema de administración bancaria.</span>
+            </footer>
+
+        </main>
+
+    </div>
+
+    <script src="js/admin-menu.js"></script>
+
+</body>
+</html>
